@@ -1,0 +1,124 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    background-color: #f0f0f0;
+}
+
+.header {
+    width: 100%;
+    height: 44px;
+    background-color: #29bde0;
+
+    span {
+        width: 13px;
+        height: 13px;
+        border-right: 2px solid #fff;
+        border-top: 2px solid #fff;
+        transform: rotate(225deg);
+        position: absolute;
+        left: 25px;
+        top: 14px;
+    }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        width: 80%;
+        height: 44px;
+        margin-top: 20px;
+        color: #29bde0;
+        font-size: 22px;
+        text-align: center;
+        background-color: #fff;
+        line-height: 44px;
+    }
+
+    .matching {
+        width: 80%;
+        height: 20em;
+        margin-top: 10px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+            display: flex;
+            align-items: center;
+        }
+
+        p:nth-child(1)::before {
+            content: url("../picture/nongmin.png");
+            // width: 50px;
+            // height: 50px;
+            // background:url(../picture/nongmin.png) no-repeat;
+
+        }
+
+        p:nth-child(2)::before {
+            content: url("../picture/shasou.png");
+            // width: 50px;
+            // height: 50px;
+            // background:url(../picture/shasou.png) no-repeat;
+
+        }
+
+    }
+
+    .empty {
+        width: 80%;
+        height: 44px;
+        margin-top: 10px;
+        background-color: #fff;
+    }
+
+    .quantity {
+        width: 80%;
+        height: 44px;
+        margin-top: 10px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+
+            span:nth-child(1) {
+                margin-right: 5px;
+                font-size: 16px;
+            }
+
+            input {
+                width: 18px;
+                height: 16px;
+                border: 1px solid #fbb632;
+                background-color: #fbb632;
+            }
+
+            span:nth-child(3) {
+                font-size: 8px;
+                color: #fbb632;
+                margin-left: 5px;
+
+            }
+        }
+    }
+
+    .deal {
+        width: 80%;
+        height: 44px;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 23px;
+        background-color: #fbb632;
+        border-radius: 5px;
+        line-height: 44px;
+        border: 0;
+    }
+
+}

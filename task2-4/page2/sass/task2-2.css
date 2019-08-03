@@ -1,0 +1,134 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  background-color: #f0f0f0;
+}
+
+.header {
+  width: 100%;
+  height: 44px;
+  background-color: #29bde0;
+}
+
+.header span {
+  width: 13px;
+  height: 13px;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  position: absolute;
+  left: 25px;
+  top: 14px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .title {
+  width: 80%;
+  height: 44px;
+  margin-top: 20px;
+  color: #29bde0;
+  font-size: 22px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 44px;
+}
+
+main .matching {
+  width: 80%;
+  height: 20em;
+  margin-top: 10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .matching p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .matching p:nth-child(1)::before {
+  content: url("../picture/nongmin.png");
+}
+
+main .matching p:nth-child(2)::before {
+  content: url("../picture/shasou.png");
+}
+
+main .empty {
+  width: 80%;
+  height: 44px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+main .quantity {
+  width: 80%;
+  height: 44px;
+  margin-top: 10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .quantity form span:nth-child(1) {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+main .quantity form input {
+  width: 18px;
+  height: 16px;
+  border: 1px solid #fbb632;
+  background-color: #fbb632;
+}
+
+main .quantity form span:nth-child(3) {
+  font-size: 8px;
+  color: #fbb632;
+  margin-left: 5px;
+}
+
+main .deal {
+  width: 80%;
+  height: 44px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 23px;
+  background-color: #fbb632;
+  border-radius: 5px;
+  line-height: 44px;
+  border: 0;
+}
+/*# sourceMappingURL=task2-2.css.map */
