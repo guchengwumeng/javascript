@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../sass/master/task2-2.css">
+    <script src="../../js/task2-2.js"></script>
+    <title>分配页面</title>
+</head>
+
+<body>
+    <div class="header">
+        <span onclick="back()"></span>
+        <p>参数设置</p>
+        <img src="../../img/_03.png" width="35px" height="35px">
+    </div>
+    <main>
+        <div class="title">玩家配比</div>
+        <div class="matching">
+            <p>杀手<span id="killer"> </span>人</p>
+            <p>平民<span id="plebs"> </span>人</p>
+        </div>
+        <div class="empty"></div>
+        <div class="quantity">
+            <form><span>请输入玩家数量</span><input type="text" id="nn" value="8" oninput="value=value.replace(/[^\d]/g,'')" maxlength="2"><span>玩家数量为4-18</span>
+            </form>
+        </div>
+        <button type="button" class="deal" onclick="print()" >去发牌</button>
+    </main>
+    <script></script>
+
+</body>
+
+</html>
