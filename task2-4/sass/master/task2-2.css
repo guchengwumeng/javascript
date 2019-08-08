@@ -89,11 +89,11 @@ main .matching p {
 }
 
 main .matching p:nth-child(1)::before {
-  content: url("../picture/shasou.png");
+  content: url("../../img/shasou.png");
 }
 
 main .matching p:nth-child(2)::before {
-  content: url("../picture/nongmin.png");
+  content: url("../../img/nongmin.png");
 }
 
 main .empty {
@@ -101,6 +101,45 @@ main .empty {
   height: 60px;
   margin-top: 10px;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .empty i {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d9d9d9;
+  font-size: 17px;
+  color: #fab344;
+  line-height: 20px;
+  font-family: Verdana;
+  text-align: center;
+}
+
+main .empty input[type=range] {
+  -webkit-appearance: none;
+  margin: 0 20px;
+  outline: none;
+  width: 50%;
+  height: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 1px #def3f8,inset 0 .125em .125em #0d1112;
+          box-shadow: 0 1px 1px #def3f8,inset 0 .125em .125em #0d1112;
+}
+
+main .empty input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  background-color: #fab344;
+  border-radius: 5px;
 }
 
 main .quantity {

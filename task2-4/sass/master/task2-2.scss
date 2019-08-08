@@ -68,14 +68,51 @@ main {
         }
 
     }
-
+    // 滑块
     .empty {
         width: 100%;
         height: 60px;
         margin-top: 10px;
         background-color: #fff;
-    }
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            width: 20px;
+            height: 20px;
+            border:1px solid #d9d9d9;
+            font-size: 17px;
+            color:#fab344;
+            line-height:20px;
+            font-family:Verdana;//字体
+            text-align:center;
+        }
+        // 轨道
+        input[type=range]{
+            -webkit-appearance:none;
+            margin:0 20px;
+            outline:none;  
+            width: 50%;
+            height:15px;
+            border-radius:10px;//轨道圆角
+            // background:-sebkit-linear-gradient(#fab344,#fab344) no-repeat;
+            // background-size:0% 100%;
+            box-shadow:0 1px 1px #def3f8,inset 0 .125em .125em #0d1112;//轨道内阴影效果
+        }
+        // 滑块按钮
+        input[type=range]::-webkit-slider-thumb{
+            -webkit-appearance:none;
+            height:25px;
+            width: 25px;    
+            background-color:#fab344;
+            border-radius:5px;
 
+
+
+        }
+
+    }
+    // 输入框
     .quantity {
         width: 100%;
         height: 60px;

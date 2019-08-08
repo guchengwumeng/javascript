@@ -114,7 +114,7 @@ li {
 li .hp-icon1::before {
   content: "";
   display: block;
-  background-image: url(../picture/home-page.png);
+  background-image: url(../../img/home-page.png);
   background-position: -10px -10px;
   float: left;
   width: 24px;
@@ -125,7 +125,7 @@ li .hp-icon1::before {
 li .hp-icon2::before {
   content: "";
   display: block;
-  background-image: url(../picture/home-page.png);
+  background-image: url(../../img/home-page.png);
   background-position: -54px -10px;
   float: left;
   width: 24px;
@@ -136,7 +136,7 @@ li .hp-icon2::before {
 li .hp-icon3::before {
   content: "";
   display: block;
-  background-image: url(../picture/home-page.png);
+  background-image: url(../../img/home-page.png);
   background-position: -10px -54px;
   float: left;
   width: 24px;
@@ -147,7 +147,7 @@ li .hp-icon3::before {
 li .hp-icon4::before {
   content: "";
   display: block;
-  background-image: url(../picture/home-page.png);
+  background-image: url(../../img/home-page.png);
   background-position: -54px -54px;
   float: left;
   width: 24px;
@@ -297,17 +297,6 @@ main .hp-rank .hp-rt {
   border-left-color: #fbb435;
   position: absolute;
   right: -10px;
-  top: 12.56em;
-}
-
-main .hp-rank .hp-fx {
-  width: 0;
-  height: 0;
-  border: 14px solid transparent;
-  border-width: 14px 14px;
-  border-right-color: #fbb435;
-  position: absolute;
-  left: -10px;
   top: 12.56em;
 }
 /*# sourceMappingURL=task2-1.css.map */
