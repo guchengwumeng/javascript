@@ -1,8 +1,8 @@
 function back() {
     
-    var r=confirm("确定要离开游戏吗？");
+    var r=confirm("确定要离开游戏吗？");//提示框//点击确认返回true跳转页面取消不执行代码留在本页面
     if(r==true){
-    window.location.href = "https://guchengwumeng.github.io/javascript/task2-4/page2/html/task2-1.html";
+    window.location.href = "https://guchengwumeng.github.io/javascript/task2-4/html/jstask2/task2-1.html";
     }
 }
 
