@@ -1,0 +1,128 @@
+main {
+
+    @include flex-jc-ai (flex-start, column);
+    margin-top: 50px;
+
+    .fate {
+        width: 90%;
+        height: 40px;
+        margin-top: 15px;
+        background-color: #fff;
+        text-align: center;
+        line-height: 40px;
+        position: relative;
+
+        .preae {
+            color: #29bde0;
+        }
+
+        i {
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid #29bde0;
+            border-top: 2px solid #29bde0;
+            -webkit-transform: rotate(225deg);
+            transform: rotate(135deg);
+            position: absolute;
+            right: 40px;
+            top: 12px;
+        }
+
+       
+    }
+
+   
+
+    .boxtxt {
+        width: 90%;
+        height: 14.5em;
+        background-color: #fff;
+        margin-top: 10px;
+        display: flex;
+        // display: none;
+        .display{
+            display: none !important;
+        }
+        .wire {
+            width: 12%;
+            height: 100%;
+            margin: 0px;
+            border-right: 1px solid #C9C9C9;
+        }
+
+        .box-tbl {
+            width: 88%;
+            height: 100%;
+
+            .night,.nighk {
+                display: flex;
+
+                img {
+                    margin-left: -15px;
+                    margin-top: 8px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .bekill,.bethro {
+            margin-top: 10px;
+            margin-left: 35px;
+            display: none;
+
+        }
+
+
+       .kill,.ghost,.make,.the {
+            width: 80%;
+            height: 30px;
+            background-color: #29bde0;
+            margin-top: 10px;
+            margin-left: 20px;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+                      
+
+                .one,.two,.three,.four {
+                    width: 0;
+                    height: 0;
+                    border: 6px solid transparent;
+                    border-right: 12px solid #29bde0;
+                    margin-left: -18px;
+                    float: left;
+                    margin-top: 8px;
+                }
+
+         
+
+        }
+
+    }
+
+
+}
+
+
+
+footer {
+    // 底部按钮组
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgba(41, 189, 224, 0.48);
+
+    button {
+        margin: 20px 5%;
+        width: 40%;
+        height: 50px;
+        background-color: #fbb435;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 30px;
+    }
+}

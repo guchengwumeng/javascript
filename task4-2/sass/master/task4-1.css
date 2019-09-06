@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------------*/
+/**
+ *                    .::::.
+ *                  .::::::::.
+ *                 :::::::::::  FUCK YOU
+ *             ..:::::::::::'
+ *           '::::::::::::'
+ *             .::::::::::
+ *        '::::::::::::::..
+ *             ..::::::::::::.
+ *           ``::::::::::::::::
+ *            ::::``:::::::::'        .:::.
+ *           ::::'   ':::::'       .::::::::.
+ *         .::::'      ::::     .:::::::'::::.
+ *        .:::'       :::::  .:::::::::' ':::::.
+ *       .::'        :::::.:::::::::'      ':::::.
+ *      .::'         ::::::::::::::'         ``::::.
+ *  ...:::           ::::::::::::'              ``::.
+ * ```` ':.          ':::::::::'                  ::::..
+ *                    '.:::::'                    ':'````..
+ */
+body {
+  font-size: initial;
+  background-color: #f0f0f0;
+}
+
+body, ul, li, button, p, a, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #29bde0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.header .return {
+  width: 13px;
+  height: 13px;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  margin-left: 28px;
+}
+
+.header .title {
+  font-size: 24px;
+  color: #fff;
+}
+
+.header .stut {
+  font-size: 3.5em;
+  color: #ffffff;
+  font-family: Courier New;
+  margin-right: 20px;
+}
+
+.header img {
+  margin-right: 10px;
+}
+
+.header label {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header label:hover {
+  background-color: #fbb435;
+}
+
+.header .hp-folded {
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+}
+
+.header .hp-fmb {
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-left: 6px;
+  margin-top: 14px;
+}
+
+.header .hp-fmb::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+}
+
+.header .hp-fmb::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20px;
+  left: 6px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+main .fate {
+  width: 90%;
+  height: 40px;
+  margin-top: 15px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+}
+
+main .fate .preae {
+  color: #29bde0;
+}
+
+main .fate i {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #29bde0;
+  border-top: 2px solid #29bde0;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(135deg);
+  position: absolute;
+  right: 40px;
+  top: 12px;
+}
+
+main .boxtxt {
+  width: 90%;
+  height: 14.5em;
+  background-color: #fff;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .boxtxt .display {
+  display: none !important;
+}
+
+main .boxtxt .wire {
+  width: 12%;
+  height: 100%;
+  margin: 0px;
+  border-right: 1px solid #C9C9C9;
+}
+
+main .boxtxt .box-tbl {
+  width: 88%;
+  height: 100%;
+}
+
+main .boxtxt .box-tbl .night, main .boxtxt .box-tbl .nighk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .boxtxt .box-tbl .night img, main .boxtxt .box-tbl .nighk img {
+  margin-left: -15px;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
+
+main .boxtxt .bekill, main .boxtxt .bethro {
+  margin-top: 10px;
+  margin-left: 35px;
+  display: none;
+}
+
+main .boxtxt .kill, main .boxtxt .ghost, main .boxtxt .make, main .boxtxt .the {
+  width: 80%;
+  height: 30px;
+  background-color: #29bde0;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+
+main .boxtxt .kill .one, main .boxtxt .kill .two, main .boxtxt .kill .three, main .boxtxt .kill .four, main .boxtxt .ghost .one, main .boxtxt .ghost .two, main .boxtxt .ghost .three, main .boxtxt .ghost .four, main .boxtxt .make .one, main .boxtxt .make .two, main .boxtxt .make .three, main .boxtxt .make .four, main .boxtxt .the .one, main .boxtxt .the .two, main .boxtxt .the .three, main .boxtxt .the .four {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right: 12px solid #29bde0;
+  margin-left: -18px;
+  float: left;
+  margin-top: 8px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background: rgba(41, 189, 224, 0.48);
+}
+
+footer button {
+  margin: 20px 5%;
+  width: 40%;
+  height: 50px;
+  background-color: #fbb435;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 30px;
+}
+/*# sourceMappingURL=task4-1.css.map */

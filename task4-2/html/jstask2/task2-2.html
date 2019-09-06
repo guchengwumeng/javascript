@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../sass/master/task2-2.css">
+    <title>分配页面</title>
+</head>
+
+<body scroll="no">
+    <div class="header">
+        <span class="return" ></span>
+        <span class="title">参数设置</span>
+        <img src="../../img/_03.png" width="35px" height="35px">
+
+    </div>
+    <main>
+        <div class="title">玩家配比</div>
+        <div class="matching">
+            <p>杀手<span id="killer"> </span>人</p>
+            <p>平民<span id="plebs"> </span>人</p>
+        </div>
+        <div class="empty">
+
+            <i id="minus">—</i>
+            <input type="range" id="sliding" value="8" min="4" max="18">
+            <i id="plus">+</i>
+
+        </div>
+        <div class="quantity">
+            <form><span>请输入玩家数量</span><input type="text" name="input" id="player" value="8"
+                    oninput="value=value.replace(/[^\d]/g,'')" maxlength="2"><span>玩家数量为4-18</span>
+            </form>
+        </div>
+        <button type="button" class="deal" id="but">去发牌</button>
+    </main>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/task2-2.js"></script>
+
+</body>
+
+</html>

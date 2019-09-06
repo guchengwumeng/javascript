@@ -1,0 +1,102 @@
+body {
+    background-color: #29bde0;
+}
+
+.header {
+    border-bottom: 1px solid #fff;
+}
+
+main {
+    @include flex-jc-ai(center, column);
+
+    .show {
+        width: 70%;
+        height: 56vh;
+        margin-top: 3em;
+        border: 3px solid #fff;
+        background-color: #ffeec6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        .circle {
+            width: 50px;
+            height: 50px;
+            margin-top: -25px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 2px solid #ffeec6;
+            color: #f56b82;
+            line-height: 50px;
+            font-size: 25px;
+            text-align: center;
+            align-self: flex-start;
+        }
+
+        .icon1 {
+            position: absolute;
+            // top:5em;
+            width: 10em;
+            height: 10em;
+
+            background: {
+                image: url(../../img/翻牌_03.png);
+                size: 100% 100%;
+                repeat: no-repeat;
+            }
+
+            // display:none;
+        }
+
+        // .vut {
+        //     display:none;
+            .icon2 {
+                position: absolute;
+                top: 15%;
+                width: 8em;
+                height: 8em;              
+                background: {
+                    image: url(../../img/翻牌-2_03.png);
+                    size: 100% 100%;
+                    repeat: no-repeat;
+                }
+
+                display:none;
+            }
+
+            .role {
+                position: absolute;
+                top: 60%;
+                font-size: 24px;
+                color: #29BDE0;
+                display: none;
+            }
+        // }
+
+    }
+
+    .on-off {
+        width: 80%;
+        height: 50px;
+        margin-top: 2em;
+        border-radius: 8px;
+        font-size: 24px;
+        line-height: 50px;
+        color: #fff;
+        background-color: #fbb632;
+        text-align: center;
+    }
+
+}
+
+// #button{display:none;}
+// #button:checked~.icon1 {
+//     display:none;
+// }
+// #button:checked~.icon2{
+//     display:inline;
+// }
+// #button:checked~.role{
+//     display:inline;
+// }

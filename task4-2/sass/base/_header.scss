@@ -1,0 +1,67 @@
+.header {
+    @include fmd(100%,50px,#29bde0);
+    @include flex-jc-ai(space-between,row);
+    // position:relative;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+
+    .return {
+        width: 13px;
+        height: 13px;
+        border-right: 2px solid #fff;
+        border-top: 2px solid #fff;
+        transform: rotate(225deg);
+       margin-left:28px;
+    }
+    .title {
+        font-size: 24px;
+        color: #fff;     
+    }
+    .stut{font-size: 2.8em;
+        color: #ffffff;
+        font-family: Courier New;
+        margin-right: 20px;}
+    img {
+        margin-right:10px;
+    }
+
+   label {//第一个页面的侧边栏按钮
+      position: absolute;
+      top: 10px;
+      left:8px;
+      width: 33px;
+      height: 33px;
+      border-radius:50%;
+      cursor: pointer;
+      //  /* 光标形状（一只手） */
+      display: inline-block;
+      &:hover {background-color:$s-fbb;}
+    }
+    .hp-folded {
+      transition: 0.2s ease-out;
+      /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+    }
+  
+    .hp-fmb {
+      @include fmd;
+      margin-left: 6px;
+      margin-top: 14px;
+  
+      &::before {
+        content: "";
+        @include fmd;
+        position: absolute;
+        top:8px;
+        left:6px;
+      }
+  
+      &::after {
+        content: "";
+        @include fmd;
+        position: absolute;
+        top: 20px;
+        left:6px;
+      }
+    }
+}

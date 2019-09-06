@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../sass/master/task2-1.css">
+   
+    <title>捉鬼游戏</title>
+</head>
+
+<body> 
+    <!-- type属性规定为复选框 -->
+    <input id="sidemenu"  type="checkbox" >
+    <!-- for属性规定label与那个表单元素绑定 -->
+    
+    <ul id="sidebar">
+        <a href="">
+            <li><div class="hp-icon1">公告</div><div class="hp-tlr1"></div></li>
+        </a>
+        <a href="">
+            <li><div class="hp-icon2">设置</div><div class="hp-tlr1"></div></li>
+        </a>
+        <a href="">
+            <li><div class="hp-icon3">帮助</div><div class="hp-tlr1"></div></li>
+        </a>
+        <a href="">
+            <li><div class="hp-icon4">关于</div><div class="hp-tlr1"></div></li>
+        </a>
+    </ul>
+    <main>
+        <!-- 侧边栏按钮 -->
+        <div class="header">
+                <label class="hp-folded" for="sidemenu">
+                        <div class="hp-fmb">
+                        </div></label>
+                        
+                    </div>
+            <!--标题  -->
+
+        <div class="hp-tlr">
+            <h3 class="hp-sg9a">上次游戏：捉鬼猜词版</h3>
+            <span class="hp-gts"></span>
+        </div>
+        <!-- 主体内容  -->
+        <div class="hp-rank">
+            <h3 class="hp-sgfb">捉鬼游戏</h3>
+            <div class="hp-button" onclick="simple()">
+                <p >简化版</p>
+            </div>
+            <p class="hp-sg9a">有21个用户玩过此游戏</p>
+            <div class="hp-button">
+                <p>警版</p>
+            </div>
+            <p class="hp-sg9a">有22个用户玩过此游戏</p>
+            <div class="hp-button">
+                <p>3.0版</p>
+            </div>
+            <P class="hp-sg9a">有23个用户玩过此游戏</P>
+            <div class="hp-dot">
+                <span class="hp-circle"></span>
+                <span class="hp-circle"></span>
+                <span class="hp-circle"></span>
+                <span class="hp-circle"></span>
+            </div>
+            <a class="hp-rt" onclick="simple()" ></a>
+            
+        </div>
+
+        <script type="text/javascript">
+        function simple(){
+            window.location.href="../jstask2/task2-2.html";
+        
+        }
+        </script>
+
+    </main>
+    
+
+</body>
+
+</html>

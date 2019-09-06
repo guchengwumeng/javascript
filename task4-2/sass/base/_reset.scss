@@ -1,0 +1,26 @@
+
+//   Document   : CSS样式初始化
+//   Created on : 2019. 7. 20
+ 
+ 
+
+body {
+  font-size: initial;
+  background-color:#f0f0f0;
+}
+
+
+
+
+body,ul,li,button,p,a,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+    list-style:none;
+    border:none;
+    outline:none;
+    text-decoration:none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}

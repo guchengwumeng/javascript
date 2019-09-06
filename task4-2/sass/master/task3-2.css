@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------------*/
+/**
+ *                    .::::.
+ *                  .::::::::.
+ *                 :::::::::::  FUCK YOU
+ *             ..:::::::::::'
+ *           '::::::::::::'
+ *             .::::::::::
+ *        '::::::::::::::..
+ *             ..::::::::::::.
+ *           ``::::::::::::::::
+ *            ::::``:::::::::'        .:::.
+ *           ::::'   ':::::'       .::::::::.
+ *         .::::'      ::::     .:::::::'::::.
+ *        .:::'       :::::  .:::::::::' ':::::.
+ *       .::'        :::::.:::::::::'      ':::::.
+ *      .::'         ::::::::::::::'         ``::::.
+ *  ...:::           ::::::::::::'              ``::.
+ * ```` ':.          ':::::::::'                  ::::..
+ *                    '.:::::'                    ':'````..
+ */
+body {
+  font-size: initial;
+  background-color: #f0f0f0;
+}
+
+body, ul, li, button, p, a, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #29bde0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.header .return {
+  width: 13px;
+  height: 13px;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  margin-left: 28px;
+}
+
+.header .title {
+  font-size: 24px;
+  color: #fff;
+}
+
+.header .stut {
+  font-size: 3.5em;
+  color: #ffffff;
+  font-family: Courier New;
+  margin-right: 20px;
+}
+
+.header img {
+  margin-right: 10px;
+}
+
+.header label {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header label:hover {
+  background-color: #fbb435;
+}
+
+.header .hp-folded {
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+}
+
+.header .hp-fmb {
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-left: 6px;
+  margin-top: 14px;
+}
+
+.header .hp-fmb::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+}
+
+.header .hp-fmb::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20px;
+  left: 6px;
+}
+
+body {
+  background-color: #29bde0;
+}
+
+.header {
+  border-bottom: 1px solid #fff;
+}
+
+main {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  float: left;
+}
+
+main div {
+  width: 22vw;
+  height: 22vw;
+  margin-bottom: 10vw;
+  margin-left: 7vw;
+  background-color: #fbb435;
+  border: 1vw solid #fff;
+  float: left;
+  position: relative;
+}
+
+main div P {
+  width: 100%;
+  text-align: center;
+  line-height: 19vw;
+  font-size: 5vw;
+}
+
+main div span {
+  width: 100%;
+  height: 6vw;
+  background-color: #83b09a;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 6vw;
+  font-size: 4vw;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  background-color: #29bde0;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer button {
+  margin: 20px 0;
+  width: 60%;
+  height: 50px;
+  background-color: #fbb435;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 30px;
+}
+/*# sourceMappingURL=task3-2.css.map */
