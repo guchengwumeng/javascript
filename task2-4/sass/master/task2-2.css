@@ -1,8 +1,41 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------------*/
+/**
+ *                    .::::.
+ *                  .::::::::.
+ *                 :::::::::::  FUCK YOU
+ *             ..:::::::::::'
+ *           '::::::::::::'
+ *             .::::::::::
+ *        '::::::::::::::..
+ *             ..::::::::::::.
+ *           ``::::::::::::::::
+ *            ::::``:::::::::'        .:::.
+ *           ::::'   ':::::'       .::::::::.
+ *         .::::'      ::::     .:::::::'::::.
+ *        .:::'       :::::  .:::::::::' ':::::.
+ *       .::'        :::::.:::::::::'      ':::::.
+ *      .::'         ::::::::::::::'         ``::::.
+ *  ...:::           ::::::::::::'              ``::.
+ * ```` ':.          ':::::::::'                  ::::..
+ *                    '.:::::'                    ':'````..
+ */
 body {
-  padding: 0;
-  margin: 0;
-  font-size: 12px;
+  font-size: initial;
   background-color: #f0f0f0;
+}
+
+body, ul, li, button, p, a, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
 }
 
 .header {
@@ -18,9 +51,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
 }
 
-.header span {
+.header .return {
   width: 13px;
   height: 13px;
   border-right: 2px solid #fff;
@@ -30,13 +68,62 @@ body {
   margin-left: 28px;
 }
 
-.header p {
+.header .title {
   font-size: 24px;
   color: #fff;
 }
 
 .header img {
   margin-right: 10px;
+}
+
+.header label {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header label:hover {
+  background-color: #fbb435;
+}
+
+.header .hp-folded {
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+}
+
+.header .hp-fmb {
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-left: 6px;
+  margin-top: 14px;
+}
+
+.header .hp-fmb::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+}
+
+.header .hp-fmb::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20px;
+  left: 6px;
 }
 
 main {

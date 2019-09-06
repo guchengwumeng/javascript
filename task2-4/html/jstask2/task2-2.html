@@ -9,11 +9,12 @@
     <title>分配页面</title>
 </head>
 
-<body>
+<body scroll="no">
     <div class="header">
-        <span onclick="back()"></span>
-        <p>参数设置</p>
+        <span class="return" onclick="back()"></span>
+        <span class="title">参数设置</span>
         <img src="../../img/_03.png" width="35px" height="35px">
+        
     </div>
     <main>
         <div class="title">玩家配比</div>
@@ -33,7 +34,7 @@
                     oninput="value=value.replace(/[^\d]/g,'')" maxlength="2"><span>玩家数量为4-18</span>
             </form>
         </div>
-        <button type="button" class="deal">去发牌</button>
+        <button type="button" class="deal" id="but">去发牌</button>
     </main>
 
     <script src="../../js/task2-2.js"></script>

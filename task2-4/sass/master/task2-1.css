@@ -1,6 +1,27 @@
 @charset "UTF-8";
+/*---------------------------------------------------------------------------*/
+/**
+ *                    .::::.
+ *                  .::::::::.
+ *                 :::::::::::  FUCK YOU
+ *             ..:::::::::::'
+ *           '::::::::::::'
+ *             .::::::::::
+ *        '::::::::::::::..
+ *             ..::::::::::::.
+ *           ``::::::::::::::::
+ *            ::::``:::::::::'        .:::.
+ *           ::::'   ':::::'       .::::::::.
+ *         .::::'      ::::     .:::::::'::::.
+ *        .:::'       :::::  .:::::::::' ':::::.
+ *       .::'        :::::.:::::::::'      ':::::.
+ *      .::'         ::::::::::::::'         ``::::.
+ *  ...:::           ::::::::::::'              ``::.
+ * ```` ':.          ':::::::::'                  ::::..
+ *                    '.:::::'                    ':'````..
+ */
 body {
-  margin: 0;
+  font-size: initial;
   background-color: #f0f0f0;
 }
 
@@ -8,15 +29,17 @@ header, main, footer {
   width: 100%;
 }
 
-ul, p, h1, h2, h3, h4, h5, h6 {
+body, ul, li, button, p, a, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  text-align: center;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-  /* 清除下划线 */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
 }
 
 .header {
@@ -212,6 +235,7 @@ main .hp-tlr .hp-gts {
 
 main .hp-sg9a {
   color: #9a9a9a;
+  text-align: center;
 }
 
 main .hp-rank {

@@ -1,0 +1,161 @@
+// #Sass混合器
+// 
+// /*
+// *2019-7-21 v1.0
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// */
+// 
+// 
+// 
+// 
+// 
+/*---------------------------------------------------------------------------*/
+
+
+// 圆
+@mixin circle($width:10px,$grf:#fff,$rle:10px){
+    width:$width ;
+    height:$width;
+    border-radius:50%;
+    background-color:$grf;
+    margin:0 $rle;
+}
+
+
+ // 大小背景颜色
+ @mixin fmd($width:20px, $height:3px, $color:#ffffff) {
+    width: $width;
+    height: $height;
+    background-color: $color;
+  }
+
+
+
+// 字体大小颜色
+@mixin fs-cr ($fs:12px, $cr:#ffffff) {
+    font-size: fs;
+    color: $cr;
+}
+
+@mixin  bo-bo($fs:12px){
+    padding:10px 0;
+    border-bottom :1px solid #d0d6d9;
+    font-size:$fs;
+}
+
+
+// 图片
+@mixin icon($left:10px, $top:10px) {
+    content:"";
+    display: block;
+    background: {
+        image: url(../../img/home-page.png);
+        position: $left $top;
+  
+    }
+    float:left;
+    width: 24px;
+    height: 24px;
+    margin:0 10px;
+  }
+
+// 
+@mixin url($le:12px,$to:12px){
+    background:url(../picture/css_sprites.png)no-repeat $le $to;
+}
+// 
+
+@mixin img ($left:12px, $top:12px) {
+    width: 100%;
+    height: 150px;
+    background:#fff url(../picture/css_sprites.png)center center no-repeat;
+    background-size:120px;
+
+}
+
+
+@mixin span {
+    font: 8px /13px MicrosoftYaHei; 
+    // 字体尺寸和行高和字体
+    color: #999999;
+}
+
+
+// 弹性布局
+@mixin flex-jc-ai ($justify:center,$dire:row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction:$dire;
+}
+
+// 水平垂直对齐
+@mixin flex-fd-ai($justify:flex-start, $align:center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction:column;
+
+}
+// 弹性布局水平垂直居中
+ @mixin btp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 排列方向交叉轴对齐
+@mixin flex-ff-ai($nowr:row nowrap, $align:center) {
+    display: flex;
+    flex-flow: $nowr;
+    align-items: $align;
+}
+
+// 换行交叉轴对齐
+
+
+// 颜色变量
+$s-fff:#ffffff;
+$s-29b:#29bde0;
+$s-9a9:#9a9a9a;
+$s-fbb:#fbb435;
+$s-f0f:#f0f0f0;  
+$g28:#29B078;
+$gff:#ffffff;
+$gfa:#fafafa;
+$g99:#999999;
+$g33:#333333;
+$gfe:#ff650e;
+$gf0:#f01400;
+$gf6:#f66f6f;
+$g20:#29bde0;
+$gf5:#fbb435;
+$gf0:#f0f0f0;
+$g8a:#83b09a;
+$gb5:#b9e9f5;
+/**
+ *                    .::::.
+ *                  .::::::::.
+ *                 :::::::::::  FUCK YOU
+ *             ..:::::::::::'
+ *           '::::::::::::'
+ *             .::::::::::
+ *        '::::::::::::::..
+ *             ..::::::::::::.
+ *           ``::::::::::::::::
+ *            ::::``:::::::::'        .:::.
+ *           ::::'   ':::::'       .::::::::.
+ *         .::::'      ::::     .:::::::'::::.
+ *        .:::'       :::::  .:::::::::' ':::::.
+ *       .::'        :::::.:::::::::'      ':::::.
+ *      .::'         ::::::::::::::'         ``::::.
+ *  ...:::           ::::::::::::'              ``::.
+ * ```` ':.          ':::::::::'                  ::::..
+ *                    '.:::::'                    ':'````..
+ */

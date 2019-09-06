@@ -1,0 +1,85 @@
+body{
+    background-color:#fff;
+}
+
+header{
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    background-color: #29bde0;
+    border-top: 1px solid #fff;
+
+    .box-tbl {
+       
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 12px;
+        height: 103px;
+
+        background: {
+            image: url(../../img/tuchen2.png), url(../../img/tuchen1.png);
+            size: 176px 103px, 54px 50px;
+            position: center, center top;
+            repeat: no-repeat, no-repeat;
+
+        }
+
+        .box-txt {
+            padding-bottom: 7px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 23px;
+        }
+    }
+
+.residue{
+    margin-left: 15%;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    color: #fff;
+    
+}
+
+}
+
+main{
+    margin-top: 15.1em;
+
+   .day{
+padding-left:15%;
+border-bottom:1px solid;
+
+.event{
+
+    margin-left: 15px;
+    height: 60px;
+    line-height: 30px;
+    font-size: 13px;
+    color: #999999;
+}
+}
+
+}
+
+footer {
+    // 底部按钮组
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgba(41, 189, 224, 0.48);
+
+    button {
+        margin: 20px 5%;
+        width: 40%;
+        height: 50px;
+        background-color: #fbb435;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 30px;
+
+    &:nth-child(1) { background-color: #f66f6f;}
+    }
+
+}

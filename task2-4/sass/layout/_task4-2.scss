@@ -1,0 +1,162 @@
+body {
+    background-color: #29bde0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid #fff;
+}
+
+.hints {
+    width: 100%;
+    height: 50px;
+    background-color: #b9e9f5;
+    position: relative;
+    margin-top: 3em;
+    overflow-y: scroll;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .hint {
+        line-height: 50px;
+        padding-left: 7%;
+        position: relative;
+
+        
+    }
+
+    .player {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: #fbb435;
+        margin-right: 24px;
+
+        //播放器 
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-left: 12px solid #ffffff;
+            margin-right: -3px;
+            margin-top: 5px;
+            display: inline-block;
+            float: right;
+        }
+
+        audio {
+            // 隐藏播放器
+            opacity: 0;
+            position: absolute;
+            top: -3px;
+            right: -14.8em;
+            // left:3px;
+        }
+    }
+
+
+}
+
+
+
+
+.clicks {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 5.5px solid transparent;
+        border-right: 5.5px solid transparent;
+        border-top: 11px solid #B9E9F5;
+        position: absolute;
+        left:7%;
+    }
+    .click {
+
+        padding-left: 7%;
+        line-height: 45px;
+        color: #fff;
+    }
+}
+
+main {
+
+    width: 100%;
+    margin-bottom: 5em;
+    display: inline-block;
+
+
+
+    .box {
+        width: 22vw;
+        height: 22vw;
+        margin-bottom: 10vw;
+        margin-left: 7vw;
+        background-color: #fbb435;
+        border: 1vw solid #fff;
+        display: inline-block;
+        position: relative;
+
+
+        .entity {
+            width: 100%;
+            text-align: center;
+            line-height: 19vw;
+            font-size: 5vw;
+        }
+
+        .seriai {
+            width: 100%;
+            height: 6vw;
+            background-color: #83b09a;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            line-height: 6vw;
+            font-size: 4vw;
+            color: #fff;
+        }
+
+        .imgs {
+            width: 6vw;
+            height: 6vw;
+            position: absolute;
+            bottom: -8vw;
+            left: 7vw;
+            display: none;
+
+        }
+    }
+
+
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #29bde0;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+        margin: 20px 0;
+        width: 60%;
+        height: 50px;
+        background-color: #fbb435;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 30px;
+    }
+}

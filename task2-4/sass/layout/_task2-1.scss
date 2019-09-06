@@ -1,0 +1,130 @@
+
+  input{display:none;}
+  #sidemenu:checked+ul{
+    /*为被选中的sidemenu后的aside设置属性（紧邻）*/
+    left: 0;
+    transition: 0.2s ease-out;
+    /*点击按钮即选中checked后,侧边栏位置变为贴着左边,配合ease-out使用,有渐变滑出的效果*/
+  }
+  #sidemenu:checked~main {
+    /*为被选中的sidemenu后的wrap设置属性（非紧邻）*/
+    // padding-left: 200px;
+    padding-left:50%;
+    transition: 0.2s ease-out;
+  }
+  
+  //  侧边栏文本
+  li {
+    
+    @include flex-jc-ai(space-between,row);
+    width: 100%;
+    height: 40px;
+    border-bottom:1px solid #9a9a9a;
+    color:#29bde0;
+    .hp-icon1::before{
+    
+      @include icon($left:-10px, $top:-10px);}
+    .hp-icon2::before{
+      
+      @include icon($left:-54px, $top:-10px);}
+    .hp-icon3::before{
+      
+      @include icon($left:-10px, $top:-54px);}
+    .hp-icon4::before{
+      
+      @include icon($left:-54px, $top:-54px);}
+    .hp-tlr1{
+        width: 13px;
+        height: 13px;
+        border-left: 2px solid $s-29b;
+        border-bottom: 2px solid $s-29b;
+        transform: rotate(225deg);
+        position: absolute;
+        right: 20px;
+    }
+  
+  }
+  // 侧边栏
+  #sidebar {
+    position:absolute;
+    top:0;
+    bottom:0;  
+    left:-50%;
+    width: 50%;
+    background-color:#ffffff;
+    transition: 0.2s ease-out;
+  
+  }
+  main {
+   
+    .hp-tlr {
+      margin: 15px 22px;
+      position: relative;   
+      @include fmd (auto,58px,#ffffff);
+      &:hover {box-shadow: 1px 2px 2px 0px #dedede;}
+      @include btp;
+      // 大于号
+      .hp-gts {
+        width: 13px;
+        height: 13px;
+        border-left: 2px solid #9a9a9a;
+        border-bottom: 2px solid #9a9a9a;
+        transform: rotate(225deg);
+        position: absolute;
+        right: 30px;
+      }
+    }
+  
+    .hp-sg9a {
+      color: #9a9a9a;
+      text-align:center;
+    }
+  // 主体
+    .hp-rank {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 22px;
+      background-color: #ffffff;
+      position: relative;
+      // 标题
+      .hp-sgfb {
+        height: 46px;
+        border-bottom: 1px solid #fbb435;
+        color: #fbb435;
+        @include btp;
+      }
+      // 版本框
+      .hp-button {
+        color: #ffffff;
+        margin: 15px 30px;
+        @include fmd(auto ,67px,#29bde0);
+        @include btp;
+        border-radius:5px;
+        &:hover {box-shadow: 1px 2px 2px 0px #dedede;}
+      }
+      // 底部小圆
+      .hp-dot {
+        @include btp;
+        .hp-circle {
+          @include fmd(10px, 10px, #9a9a9a);
+          border-radius: 50%;
+          margin: 5px;
+          &:hover {background-color:#29bde0;}
+        }
+  
+  
+      }
+      // 侧边三角按钮链接
+      .hp-rt { 
+        width: 0;
+        height: 0;
+        border: 14px solid transparent;
+        border-width: 14px 14px;
+        border-left-color: #fbb435;     
+        position: absolute;
+        right: -10px;
+        top: 12.56em;   }
+  
+    }
+  
+  }
