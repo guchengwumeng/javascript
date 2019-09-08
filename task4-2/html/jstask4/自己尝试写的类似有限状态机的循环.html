@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>尝试自己写有限状态机</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    div{
+       height: 100px;
+       line-height: 100px;
+    }
+    .qq {
+      background-color: cadetblue;
+    }
+
+    .ww {
+      background-color: bisque;
+    }
+
+    .ee {
+      background-color: chartreuse;
+    }
+
+    .rr {
+      background-color: chocolate;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="qq">小明</div>
+  <div class="ww">小红</div>
+  <div class="ee">小周</div>
+  <div class="rr">小白</div>
+</body>
+<script>
+  var qq = document.getElementsByClassName('qq')[0],
+      ww = document.getElementsByClassName('ww')[0],
+      ee = document.getElementsByClassName('ee')[0],
+      rr = document.getElementsByClassName('rr')[0];
+
+
+  var pp = 0;
+ 
+  qq.onclick = function () { 
+    if (pp == 0) {
+      alert('我是小明')
+       pp = pp + 1;           //这是这个状态机的核心部分，点击一次加1，
+      // pp++;
+    }else if(pp ==1){        //这里是三个判断，不按照我的顺序来的话，会出现警告框     
+      alert('请点击小红')
+    }else if(pp ==2){
+      alert('请点击小周')
+    }else if(pp ==3){
+      alert('请点击小白')
+    }
+    console.log(pp)
+  }
+  ww.onclick = function () {
+    if (pp == 1) {
+      alert('我是小红')
+      pp = pp + 1;
+      // pp++;
+    }else if(pp ==0){
+      alert('请点击小明')
+    }else if(pp ==2){
+      alert('请点击小周')
+    }else if(pp ==3){
+      alert('请点击小白')
+    }
+    console.log(pp)
+  }
+  ee.onclick = function () {
+    if (pp == 2) {
+      alert('我是小周')
+      pp = pp + 1;
+    }else if(pp ==0){
+      alert('请点击小明')
+    }else if(pp ==1){
+      alert('请点击小红')
+    }else if(pp ==3){
+      alert('请点击小白')
+    }
+    console.log(pp)
+  }
+  rr.onclick = function () {
+    if (pp == 3) {
+      alert('我是小白')
+      pp = 0;
+    }else if(pp ==0){
+      alert('请点击小明')
+    }else if(pp ==1){
+      alert('请点击小红')
+    }else if(pp ==2){
+      alert('请点击小周')
+    }
+    console.log(pp)
+  }
+  
+</script>
+
+</html>
