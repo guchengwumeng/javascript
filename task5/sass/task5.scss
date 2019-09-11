@@ -1,0 +1,81 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    background: {
+        image: url(../img/wallhaven-nm8669.jpg);
+        size: 100% 100%;
+        repeat: no-repeat;
+    }
+
+}
+
+.login {
+    width: 18em;
+    height: 18em;
+    background: RGBA(255, 255, 255, 0.7);
+    border: 1px solid #000;
+    border-radius: 10px;
+
+    .title {
+        font-size: 1.5em;
+        color: #1e90ff;
+        text-align: center;
+        margin: 10px 0 25px 0;
+    }
+
+    .user {
+        width: 80%;
+        height: 40px;
+        margin-left: 10%;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+        img {
+            width: 24px;
+    height: 22px;
+    margin: 0 7px;
+    position: relative;
+    top: 8px;
+        }
+
+        .one {
+            border: 0;
+    border-left: 1px solid #e1e5e7;
+    height: 23px;
+    padding: 0 6px;
+    outline: none;
+    position: relative;
+    top: 3px;
+        }
+    }
+
+
+    p {
+        height: 22px;
+        color: red;
+        margin-left: 10%;
+        margin: 0 0 10px 10%;
+    }
+
+    button {
+    width: 80%;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background-color: #1e90ff;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+    margin-left: 10%;
+    line-height: 40px;
+    font-size: 19px;
+    }
+}
+
+
