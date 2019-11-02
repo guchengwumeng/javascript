@@ -1,0 +1,145 @@
+.alert-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+
+.alert-dialog {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.alertbox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99999;
+}
+
+.alert-dialog {
+  display: inline-block;
+  width: 600px;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+  text-align: left;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+  top: 140px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.alert-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.alert-title {
+  font-size: 18px;
+  line-height: 1;
+  color: #4dc6e8;
+}
+
+.alertclose {
+  float: right;
+  cursor: pointer;
+  color: #cccccc;
+}
+
+::v-deep .modal {
+  padding: 15px;
+  margin: 0;
+  text-align: left;
+}
+
+::v-deep .title {
+  font-size: 16px;
+  color: #999;
+  margin: 0 0 10px;
+}
+
+::v-deep .body {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.alert-body {
+  padding: 15px;
+  color: #5a5e66;
+  font-size: 20px;
+  text-align: center;
+}
+
+.alert-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+.alert-footer > :nth-child(1) {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.alert-footer > :nth-child(1):hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+.alert-footer > :nth-child(2) {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.alert-footer > :nth-child(2):hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.alertbtn {
+  text-align: center;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  padding: 9px 15px;
+  margin-right: 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  line-height: 1;
+  background: #fff;
+  border: 1px solid #d8dce5;
+  border-color: #d8dce5;
+  color: #5a5e66;
+}
+/*# sourceMappingURL=alert.css.map */
